@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
+        <title>Your Tamagotchi</title>
+    </head>
+    <body>
+        <h1>Your Tamagotchi!</h1>
+        <h2>{{ yourTamagotchi.getName }}</h2>
+        <ul>
+            <li>food: {{ yourTamagotchi.getStat(1) }}</li>
+            <li>rest: {{ yourTamagotchi.getStat(2) }}</li>
+            <li>play: {{ yourTamagotchi.getStat(3) }}</li>
+        </ul>
+        <form method='post'>
+            <button id='play' formaction='/play' type='submit'>Play</button>
+            <button id='feed' formaction='/feed' type='submit'>Feed</button>
+            <button id='sleep' formaction='/sleep' type='submit'>Put to sleep</button>
+        </form>
+    </body>
+</html>
